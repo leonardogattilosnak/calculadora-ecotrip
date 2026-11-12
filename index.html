@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora EcoTrip - Impacto Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Calculadora EcoTrip</h1>
+        <p class="header__subtitle">Simule o impacto ambiental das suas viagens</p>
+    </header>
+
+    <main class="main">
+        <section class="calculator">
+            <form id="travel-form" class="calculator__form">
+                <div class="form-group">
+                    <label for="origin">Origem:</label>
+                    <input type="text" id="origin" placeholder="Ex: Bauru" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destino:</label>
+                    <input type="text" id="destination" placeholder="Ex: São Paulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="distance">Distância (km):</label>
+                    <input type="number" id="distance" placeholder="Ex: 300" required>
+                </div>
+                <button type="submit" class="btn-calculate">Calcular Impacto</button>
+            </form>
+        </section>
+
+        <section id="results" class="results results--hidden">
+            <h2>Resultado da Viagem</h2>
+            <div id="result-content"></div>
+        </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="calculator.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
